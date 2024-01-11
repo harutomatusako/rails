@@ -68,5 +68,11 @@ Rails.application.configure do
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
   
+  config.action_dispatch.default_headers = {
+    'Access-Control-Allow-Origin' => '*',
+    'Access-Control-Request-Methods' => '*',
+    'Access-Control-Request-Headers' => '*'
+  }
+
   config.hosts << "rails-production-6d55.up.railway.app"
 end
