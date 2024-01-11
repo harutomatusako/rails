@@ -1,4 +1,4 @@
-class CreateEventUsers < ActiveRecord::Migration[7.0]
+class CreateTable < ActiveRecord::Migration[7.0]
   def change
     create_table :event_users do |t|
       t.bigint :users_id, null: false
