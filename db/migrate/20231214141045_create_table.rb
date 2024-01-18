@@ -12,6 +12,7 @@ class CreateTable < ActiveRecord::Migration[7.0]
     create_table :events do |t|
       t.string :name
       t.text :description
+      
       t.datetime :date
       t.string :location
       t.bigint :user_id, null: false
